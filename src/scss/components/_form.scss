@@ -1,0 +1,72 @@
+.form {
+}
+
+.form-row {
+	margin-bottom: 20px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+	padding: 20px;
+	border: 1px solid #C4C4C4;
+	font-family: inherit;
+	border-radius: 7px;
+	width: 100%;
+	max-width: 560px;
+	transition: 0.3s all;
+
+	&:focus {
+		border-color: #333;
+		box-shadow: inset 0 0 0 1px #333;
+		outline: none;
+	}
+
+	&.field-error {
+		border-color: red;
+	}
+	&.field-error:focus {
+		border-color: red;
+		box-shadow: inset 0 0 0 1px red;
+	}
+}
+
+.form textarea {
+	max-width: 100%;
+	min-height: 150px;
+	resize: vertical;
+}
+
+.form-row-last {
+	display: flex;
+	align-items: center;
+}
+
+.form-message {
+	margin-left: 20px;
+	font-weight: bold;
+}
+
+.loading {
+	position: relative;
+}
+.loading:after {
+	content: "";
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	border: 6px solid rgba(#000, 0.3);
+	border-right-color: #000;
+	position: absolute;
+	left:10px;
+	top:50%;
+	transform: translate(0 , -50%)  rotate(0deg);
+	animation: loading 0.3s 0s infinite linear;
+}
+
+@keyframes loading {
+	100% {
+		transform: translate(0 , -50%) rotate(360deg);
+	}
+}

@@ -1,0 +1,92 @@
+
+.first-car{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-1-2{
+    display: flex;
+    width: 100%;
+}
+.infoPhotoFirst{
+    width: 100%;
+}
+
+.infoTextFirst p{
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.infoTextFirst span{
+    font-size: 36px;
+    font-weight: normal;
+    width: 100%;
+}
+.speed-first{
+    width: 100px;
+    height: 25px;
+    background-color: #777777;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    animation: animCars 2s 0s infinite alternate ease-in-out;
+}
+
+.hp-first{
+    width: 100px;
+    height: 25px;
+    background-color: #777777;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    animation: animCars 2s 0s infinite alternate ease-in-out;
+}
+
+.torque-first{
+    width: 100px;
+    height: 25px;
+    background-color: #777777;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    animation: animCars 2s 0s infinite alternate ease-in-out;
+}
+.time-first{
+    width: 100px;
+    height: 25px;
+    background-color: #777777;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    animation: animCars 2s 0s infinite alternate ease-in-out;
+}
+
+
+@keyframes animCars {
+    0%{
+        width: 100px;
+        background-color: #777777;
+    }
+    100%{
+        width: 300px;
+        background-color: #47b8e0;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 760px) {
+
+   .first-car{
+       display: flex;
+       flex-direction: column;
+   }
+    .infoTextFirst{
+        margin-left: 75px;
+        padding-left: 20px;
+    }
+    .infoTextFirst span{
+        margin-left: 25px;
+    }
+}
+

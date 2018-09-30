@@ -1,0 +1,48 @@
+.main-article {}
+.main-article-link {
+    display: block;
+    position: relative;
+}
+.main-article-link-over {
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background: rgba(black, 0.6);
+    opacity:0;
+    transition: 0.5s;
+}
+.main-article-link:hover .main-article-link-over {
+    opacity: 1;
+}
+.main-article-link-over::before,
+.main-article-link-over::after {
+    content:"";
+    height:70px;
+    width:1px;
+    background: #fff;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+.main-article-link:hover .main-article-link-over::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.main-article-link:hover .main-article-link-over::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.main-article-link img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.main-article-title {
+    font-size:20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.main-article-text {}
+.main-article-btn {}
